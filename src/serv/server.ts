@@ -36,7 +36,7 @@ interface UWSServer extends WebSocket.Server<WebSocket.WebSocket> {
     rooms?: Record<RoomID, SocketRoom>;
 }
 
-const wss: UWSServer = new WebSocket.Server({ port: 3001 });
+const wss: UWSServer = new WebSocket.Server({ port: 4000 });
 /**
  * It is crutial these custom methods are defined above the server's
  * initial connection listener's instantiation. Otherwise, the server
